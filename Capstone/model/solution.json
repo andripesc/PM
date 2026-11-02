@@ -1,0 +1,674 @@
+{
+ "decisions": {
+  "crash": {
+   "F23": 21,
+   "F24": 18,
+   "F29": 18,
+   "F31": 23,
+   "A08": 15,
+   "A10": 15
+  },
+  "pos": {
+   "Power transformers": [
+    {
+     "lot": 1,
+     "expedite": true,
+     "mode": "Road (truck)"
+    },
+    {
+     "lot": 2,
+     "expedite": true,
+     "mode": "Road (truck)"
+    }
+   ],
+   "Generators": [
+    {
+     "lot": 1,
+     "expedite": true,
+     "mode": "Road (truck)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    }
+   ],
+   "Switchgear + UPS/batteries": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    }
+   ],
+   "Cooling train equipment": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    }
+   ],
+   "Busway / PDU / racks": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    }
+   ],
+   "Shared controls + fibre": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Sea (short-sea ship)"
+    }
+   ],
+   "AI compute capacity": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Air (freighter)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Road (truck)"
+    }
+   ],
+   "High-speed network + storage": [
+    {
+     "lot": 1,
+     "expedite": false,
+     "mode": "Rail (train)"
+    },
+    {
+     "lot": 2,
+     "expedite": false,
+     "mode": "Road (truck)"
+    }
+   ]
+  },
+  "gen_disassembled": {
+   "1": false,
+   "2": false
+  },
+  "jit": true,
+  "po_offset": {}
+ },
+ "log": [
+  {
+   "step": "max-accel",
+   "move": "all crashed to minimum, all POs expedited, fastest transport",
+   "npv_k": 205975.67410291795,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.41100000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax1",
+   "move": "un-expedite AI compute capacity lot 1",
+   "npv_k": 213072.53004517805,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.41600000000000004,
+   "feasible": true
+  },
+  {
+   "step": "relax2",
+   "move": "un-expedite AI compute capacity lot 2",
+   "npv_k": 218392.0504366545,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.41600000000000004,
+   "feasible": true
+  },
+  {
+   "step": "relax3",
+   "move": "un-expedite Cooling train equipment lot 1",
+   "npv_k": 220622.08104445244,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.418,
+   "feasible": true
+  },
+  {
+   "step": "relax4",
+   "move": "un-expedite High-speed network + storage lot 1",
+   "npv_k": 222069.74149485218,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.419,
+   "feasible": true
+  },
+  {
+   "step": "relax5",
+   "move": "un-expedite Cooling train equipment lot 2",
+   "npv_k": 223479.6453530895,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.42,
+   "feasible": true
+  },
+  {
+   "step": "relax6",
+   "move": "un-expedite High-speed network + storage lot 2",
+   "npv_k": 224617.8084424542,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.42,
+   "feasible": true
+  },
+  {
+   "step": "relax7",
+   "move": "un-expedite Switchgear + UPS/batteries lot 1",
+   "npv_k": 225978.03430785207,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.421,
+   "feasible": true
+  },
+  {
+   "step": "relax8",
+   "move": "un-expedite Switchgear + UPS/batteries lot 2",
+   "npv_k": 227338.17402757003,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.422,
+   "feasible": true
+  },
+  {
+   "step": "relax9",
+   "move": "un-expedite Generators lot 2",
+   "npv_k": 228403.20770721463,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.423,
+   "feasible": true
+  },
+  {
+   "step": "relax10",
+   "move": "crash F21 -> 45 wd",
+   "npv_k": 229268.79179093355,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.423,
+   "feasible": true
+  },
+  {
+   "step": "relax11",
+   "move": "un-expedite Shared controls + fibre lot 1",
+   "npv_k": 230169.65719131439,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.424,
+   "feasible": true
+  },
+  {
+   "step": "relax12",
+   "move": "un-expedite Busway / PDU / racks lot 1",
+   "npv_k": 230716.47385813115,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.424,
+   "feasible": true
+  },
+  {
+   "step": "relax13",
+   "move": "un-expedite Busway / PDU / racks lot 2",
+   "npv_k": 231572.14367476423,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.425,
+   "feasible": true
+  },
+  {
+   "step": "relax14",
+   "move": "crash F38 -> 30 wd",
+   "npv_k": 232112.58342304916,
+   "hall_a": "2028-06-06",
+   "hall_b": "2029-03-27",
+   "fpa": "2029-05-14",
+   "d": 0.425,
+   "feasible": true
+  },
+  {
+   "step": "relax15",
+   "move": "crash F05 -> 25 wd",
+   "npv_k": 249682.83377127696,
+   "hall_a": "2028-05-18",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.456,
+   "feasible": true
+  },
+  {
+   "step": "relax16",
+   "move": "crash F22 -> 30 wd",
+   "npv_k": 255566.32573676796,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47200000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax17",
+   "move": "crash F30 -> 30 wd",
+   "npv_k": 256327.4071868525,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47300000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax18",
+   "move": "crash F37 -> 25 wd",
+   "npv_k": 256616.52514761308,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47300000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax19",
+   "move": "crash F16 -> 30 wd",
+   "npv_k": 256876.89480635375,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47300000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax20",
+   "move": "crash F15 -> 30 wd",
+   "npv_k": 257132.91246358928,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47300000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax21",
+   "move": "crash F33 -> 20 wd",
+   "npv_k": 257647.265150075,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax22",
+   "move": "crash F27 -> 20 wd",
+   "npv_k": 257808.3727466854,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax23",
+   "move": "crash F09 -> 29 wd",
+   "npv_k": 257960.57035767168,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax24",
+   "move": "crash F35 -> 20 wd",
+   "npv_k": 258102.78510854862,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax25",
+   "move": "AI compute capacity lot 2 by Road (truck)",
+   "npv_k": 258309.9143022815,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax26",
+   "move": "High-speed network + storage lot 1 by Rail (train)",
+   "npv_k": 258421.97104183733,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax27",
+   "move": "High-speed network + storage lot 2 by Road (truck)",
+   "npv_k": 258537.2893070652,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax28",
+   "move": "crash A07 -> 30 wd",
+   "npv_k": 258631.83278773172,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax29",
+   "move": "Cooling train equipment lot 2 by Sea (short-sea ship)",
+   "npv_k": 258725.62651191177,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-02-28",
+   "fpa": "2029-04-17",
+   "d": 0.47400000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax30",
+   "move": "crash F31 -> 23 wd",
+   "npv_k": 258859.66670327724,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax31",
+   "move": "crash F32 -> 25 wd",
+   "npv_k": 258945.5391034795,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax32",
+   "move": "crash F13 -> 29 wd",
+   "npv_k": 259033.02322332392,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax33",
+   "move": "crash F10 -> 29 wd",
+   "npv_k": 259109.23110491672,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax34",
+   "move": "crash F25 -> 20 wd",
+   "npv_k": 259185.159637906,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax35",
+   "move": "crash F19 -> 25 wd",
+   "npv_k": 259657.10835096004,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47500000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax36",
+   "move": "Generators lot 2 by Sea (short-sea ship)",
+   "npv_k": 260052.83739342177,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax37",
+   "move": "Cooling train equipment lot 1 by Sea (short-sea ship)",
+   "npv_k": 260128.7410987946,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax38",
+   "move": "crash F14 -> 29 wd",
+   "npv_k": 260200.2264075429,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax39",
+   "move": "crash O12 -> 40 wd",
+   "npv_k": 260269.39468140624,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax40",
+   "move": "crash O06 -> 50 wd",
+   "npv_k": 260336.26253760452,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax41",
+   "move": "Busway / PDU / racks lot 1 by Sea (short-sea ship)",
+   "npv_k": 260401.98029969193,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax42",
+   "move": "Busway / PDU / racks lot 2 by Sea (short-sea ship)",
+   "npv_k": 260466.63501277013,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax43",
+   "move": "crash O05 -> 49 wd",
+   "npv_k": 260514.1890504356,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax44",
+   "move": "Switchgear + UPS/batteries lot 1 by Sea (short-sea ship)",
+   "npv_k": 260555.43759676415,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax45",
+   "move": "Switchgear + UPS/batteries lot 2 by Sea (short-sea ship)",
+   "npv_k": 260594.54672701372,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax46",
+   "move": "crash O03 -> 30 wd",
+   "npv_k": 260632.05545783124,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax47",
+   "move": "crash O07 -> 39 wd",
+   "npv_k": 260668.06192801867,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax48",
+   "move": "crash O04 -> 40 wd",
+   "npv_k": 260698.46805160382,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax49",
+   "move": "Shared controls + fibre lot 1 by Sea (short-sea ship)",
+   "npv_k": 260713.79103518458,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax50",
+   "move": "crash A08 -> 15 wd",
+   "npv_k": 260721.68166594778,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax51",
+   "move": "crash A10 -> 15 wd",
+   "npv_k": 260729.03956073703,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": "relax52",
+   "move": "crash O08 -> 14 wd",
+   "npv_k": 260733.03348857097,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": 0,
+   "move": "baseline",
+   "npv_k": 260733.03348857097,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  },
+  {
+   "step": 0,
+   "move": "baseline",
+   "npv_k": 260733.03348857097,
+   "hall_a": "2028-05-10",
+   "hall_b": "2029-03-02",
+   "fpa": "2029-04-19",
+   "d": 0.47600000000000003,
+   "feasible": true
+  }
+ ],
+ "start": "max-accel-relax",
+ "alternatives": [
+  [
+   "max-accel-relax",
+   260733.03348857097
+  ],
+  [
+   "baseline-climb",
+   246440.63006644856
+  ]
+ ]
+}
